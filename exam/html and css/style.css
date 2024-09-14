@@ -1,0 +1,832 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Matemasie&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jolly+Lodger&family=Matemasie&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedgwick+Ave&family=UnifrakturMaguntia&display=swap');
+:root{
+    --main-color: #DC780B;
+    --main-font:"Roboto", sans-serif;
+    --color-text: #fff;
+    --color-text3: #c1c1c1;
+    --second-font:"Philosopher", sans-serif;
+    --active-color: #7c4409;
+    --border-tex: grey;
+    --take-way: #FDF9F5;
+    --color-text2: black;
+    --contact-us: #FFF5EB;
+    --footer-back:#252525;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+nav{
+    width: 100%;
+    display: flex;
+    height: 46px;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+nav p {
+    display: flex;
+    gap: 40px;
+
+}
+nav p a{
+    padding-top: 15px;
+    text-decoration: none;
+    text-align: left;
+    color: var(--border-tex);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+
+}
+.home_hover{
+    color: var(--main-color);
+}
+nav p a:hover{
+    color: var(--main-color);
+    transition: .2s ;
+}
+.btn_booking_now{
+    font-family: "Roboto", sans-serif;
+    padding-top: 10px;
+    width: 155px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+
+}
+.btn_booking_now button{
+    width: 155px;
+    height: 46px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--color-text);
+    gap: 0px;
+    border-radius: 5px;
+    opacity: 0px;
+
+}
+.btn_booking_now button:hover{
+    cursor: pointer;
+    background-color: var(--color-text);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+.btn_booking_now button:active{
+    background-color: var(--active-color);
+    color: var(--color-text);
+    border: none;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 1140px;
+    height: 608px;
+    
+}
+.img2 img{
+    width: 576px;
+    height: 608px;
+    
+}
+.main_title{
+    width: 555px;
+    height: 356px;
+    margin-top: 150px;
+}
+.main_title h1{
+    font-family: "Philosopher", sans-serif;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+
+}
+.main_title p{
+    margin-top: 42px;
+}
+.main_first_btn{
+    margin-top: 50px;
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color:var(--main-color);
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    margin-right: 20px;
+    
+}
+.main_second_btn{
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-text);
+    color: var(--main-color) ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+}
+.main_first_btn:hover{
+    background-color: var(--color-text);
+    color: var(--main-color) ;
+    border: 2px solid var(--main-color);
+    transition: .3s ease;
+}
+.main_second_btn:hover{
+    background-color: var(--main-color);
+    color: var(--color-text) ;
+    transition: .3s ease;
+}
+.main_first_btn:active,
+ .main_second_btn:active{
+    background-color: var(--active-color);
+    color: var(--color-text);
+    border: none;
+}
+/* section-⬇️2 */
+.second_page p,h2{
+    text-align: center;
+}
+.second_page{
+    margin-top: 100px;
+}
+.feature_p{
+    color: var(--main-color);    
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+.feature_title{
+    margin-top: 5px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.wrapper_feature_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.second_page_card1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 228px;
+    text-align: center;
+}
+.card_title1{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.feature_icon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #F4F7EB;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 33px;
+
+}
+.feature_icon1 img{
+    text-align: center;
+    width: 44.95px;
+    height: 44.46px;
+}
+.second_page_card2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 228px;
+    text-align: center;
+}
+.card_title2{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.feature_icon2{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FDF1EF;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 33px;
+}
+.feature_icon2 img{
+    text-align: center;
+    width: 44.95px;
+    height: 44.46px;
+}
+
+
+.second_page_card3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 228px;
+    text-align: center;
+}
+.card_title3{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.feature_icon3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FCF2E7;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 33px;
+
+}
+.feature_icon3 img{
+    text-align: center;
+    width: 44.95px;
+    height: 44.46px;
+}
+/* section - 2⬆️ */
+
+
+/* section - 3⬇️⬇ */
+.third_page{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 123px;
+}
+.aboutUs_img1 img{
+    width: 555px;
+    height: 500px;
+
+}
+.aboutUs_main_title{
+    width: 488px;
+    height: 315px;
+    margin-top: 100px;
+
+}
+.about_us{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    
+}
+.about_us_title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    text-align: left;
+    margin-bottom: 30px;
+    
+}
+.about_us_p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+.aboutUs_main_title button{
+    margin-top: 30px;
+    width: 142px;
+    height: 42px;
+    border-radius: 5px;
+    background-color:var(--main-color);
+    border: none;
+    outline: none;
+    color: var(--color-text);    
+}
+.aboutUs_main_title button:hover{
+    background: var(--color-text);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    transition: .2s;
+    cursor: pointer;
+}
+.aboutUs_main_title button:active{
+    background-color: var(--active-color);
+    color: var(--color-text);
+    border: none;
+}
+/* section - 3⬆️ */
+
+
+/* section - 4⬇️*/
+
+
+.menu_p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.menu_title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    
+}
+.menu_p2{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    
+}
+.wrapper_menu_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 748px;
+    height: 146px;
+    margin-left: 250px;
+    margin-top: 115px;
+}
+.menu_card1 img{
+    width: 380px;
+    height: 264px;
+    border-radius: 0px 10px 0px 0px;
+    opacity: 0px;
+    
+}
+.menu_cost{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.menu_card_title{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    width: 225px;
+}
+.menu_cos1{
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+    width: 80px;
+    
+}
+.menu_card1{
+    width: 380px;
+    height: 446px;
+    border: 1px solid var(--border-tex);
+    opacity: 0px;
+    border-radius: 80px 10px 10px 10px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.menu_card_p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu_plus_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.plus_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    width: 36px;
+    height: 34px;
+    border-radius: 5px;
+    color: var(--color-text);
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.plus_card:hover{
+    background-color: var(--color-text);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.plus_card:active{
+    background-color: var(--active-color);
+    color: var(--color-text);
+    border: none;
+}
+.menu_icon{
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.menu_card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn button{
+    width: 142px;
+    height: 42px;
+    background-color: var(--color-text);
+    border-radius: 5px;
+    color: var(--main-color);
+    border: none;
+    border: 2px solid var(--main-color);
+    outline: none;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: var(--main-color);
+    color: var(--color-text) ;
+    transition: .3s ease;
+}
+.btn button:active{
+    background-color: var(--active-color);
+    color: var(--color-text);
+    border: none;
+}
+
+/* section - 4 menu⬆️ */
+
+
+/* section - 5(take away)⬇️*/
+
+.take_away{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 518px;
+    background-color: var(--take-way);
+    margin-top: 180px;
+}
+.wrap_take_away{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.take_away_p1{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: var(--main-color);
+    
+}
+.take_away_title{
+    width: 555px;
+    height: 275px;
+    margin-right: 128px;
+}
+.take_main_title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    text-align: left;
+    
+}
+.take_away_p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    
+}
+.img_take_away img{
+    width: 206.99px;
+    height: 417px;
+    border-radius: 50px;
+    box-shadow: 1px 10px 25px var(--main-color);
+}
+.wrap_take_away button{
+    width: 163px;
+    height: 48px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.app_store{
+    background-color: var(--color-text2);
+    color: var(--color-text);
+    border: none;
+    margin-right: 30px;
+}
+.app_store:hover{
+    background-color: var(--footer-back);
+    transition: .2s ease;
+}
+.app_store  i{
+    margin-right: 8px;
+}
+.play_market{
+    background-color: var(--take-way);
+    border: 2px solid gray;
+}
+.play_market i{
+    margin-right: 8px;
+}
+.play_market:hover{
+    background-color: var(--color-text3);
+    transition: .2s ease;
+}
+.take_away_title button{
+    margin-top: 39px;
+}
+/* section take away⬆️ */
+
+
+/* section testimonial ⬇️ */
+
+.testimonial_p1{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 12px;    
+}
+.testimonial_title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.testimonial_p2{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    
+}
+.explain{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    
+}
+.name_testimonial{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.write_by{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: center;
+    
+}
+.wrap_testimonial{
+    width: 750px;
+    height: 476px;
+    
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 213px;
+}
+.img9{
+    display: flex;
+    justify-content: center;
+    margin-top: 73px;
+    margin-bottom: 42px;
+}
+.icon_tes{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+
+/* section testimonial ⬆️ */
+
+/* SECTION CONTACT ⬇️ */
+.contact_us{
+    margin-top: 120px;
+    background-color: var(--contact-us);
+    height: 448px;    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap_contact{
+
+    width: 750px;
+    height: 216px;
+    
+}
+.contact{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: var(--main-color);    
+}
+.contact_title{
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.6px;
+    text-align: center;
+    
+}
+.wrap_contact input{
+    width: 730px;
+    height: 55px;
+    border-radius: 10px;
+    margin-top: 46px;
+    padding: 15px 15px 15px 20px;
+    border: none;
+    outline-color: var(--main-color);
+
+}
+.contact_btn{
+    position: absolute;
+    transform: translateY(46px);
+    left: 940px;
+    width: 106px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--color-text);
+    border: none;
+
+}
+.contact_btn:hover{
+    background-color: var(--color-text);
+    color: var(--main-color);
+    transition: .2s ease;
+    border: 2px solid var(--main-color);
+    cursor: pointer;
+}
+.contact_btn:active{
+    background-color: var(--active-color);
+    color: var(--color-text);
+    border: none;
+}
+/* SECTION CONTACT ⬆️⬆ */
+
+/* footer ⬇️*/
+footer{
+    background-color: var(--footer-back);
+    height: 429px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 137px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+.food_footer{
+    width: 262px;
+    height: 73px;
+    color: var(--color-text); 
+       
+}
+.food_footer img{
+    margin-bottom: 25px;
+}
+.food_footer p{
+    margin-bottom: 20px;
+}
+.home_footer{
+    width: 262px;
+    color: var(--color-text);
+}
+.menu_footer{
+    color: var(--color-text);
+    
+}
+.company_footer{
+    color: var(--color-text);
+}
+.titles{
+    font-family: Philosopher;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.16px;
+    text-align: left;
+    margin-bottom: 10px;
+    
+}
+.home_footer p, .menu_footer p, .company_footer p{
+    padding-bottom: 20px;
+}
+.company_footer i{
+    padding-right: 5px;
+}
+.menu_footer{
+    margin-right: 100px;
+}
+/* footer ⬆️*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
